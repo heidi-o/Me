@@ -9,7 +9,7 @@ $('ul.navigation').mobileMenu({
 	subMenuDash: '&ndash;'
 });
 
-var yPos = $(window).height()/3;
+var yPos = $(window).height()/4;
 
 $(function() {
 	$('#slideout-button').delay(3000).animate({
