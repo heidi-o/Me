@@ -194,6 +194,7 @@ ul.navigation .current a {
 
 /* --------- Slideout Menu --------- */ 
 #slideout-wrap { position: fixed; z-index: 100; top: 0; left: 0; margin-top:-65px; height:65px; width:100%; background: none!important; }
+#slideout-icon {width:9px;height:8px;display: block;text-indent: -9999px;position: absolute; background: url(../images/slide_ico.png) 0 0 no-repeat; margin: 6px 18px;}
 #slideout-button {position: absolute;top: 62px; left:49%; z-index:10;}
 #slideout-button a {width:45px;height:33px;display: block;text-indent: -9999px;background: url(../images/slide_btn.png) 0 0 ;}
 #slideout-button a.close { background-position: 0 -33px; }

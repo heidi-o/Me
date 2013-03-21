@@ -81,25 +81,22 @@ function successMessage() {
 }
 
 //==================== Slideout Menu  ========================//
-	var slideout = $('#slideout-wrap');
-	var slideoutButton = $('#slideout-button a');	
-	var slideoutHeight = slideout.height();	
+	var slideout 		= $('#slideout-wrap');
+	var slideoutButton 	= $('#slideout-button a');	
+	var slideoutIcon 	= $('#slideout-icon');
+	var slideoutHeight 	= slideout.height();	
 	
-	slideoutButton.toggle( function() {		
+	slideoutButton.toggle( function() {	
+		slideoutIcon.transition({ rotate: '45deg' });
 		slideout.animate({marginTop : 0}, 600, 'easeInOutCirc');		
-		slideoutButton.addClass('close');		
+		slideoutButton.addClass('close');
 	}, function() {		
-		slideout.animate({marginTop : -slideoutHeight}, 600, 'easeInOutCirc');		
+		slideout.animate({marginTop : -slideoutHeight}, 600, 'easeInOutCirc');
+		slideoutIcon.transition({ rotate: '0' });
 		slideoutButton.removeClass('close');		
 		
 	});
 
-//==================== Accordion ========================//
-		$( "#accordion" ).accordion({
-			autoHeight: false,
-			navigation: true
-		});
-		
 //==================== Testimonials ========================//
 	$('.testimonials').testimonials();
 	
