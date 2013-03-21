@@ -12,11 +12,7 @@ $('ul.navigation').mobileMenu({
 var yPos = $(window).height()/4;
 
 $(function() {
-	$('#slideout-button').delay(3000).animate({
-		top: '64px'
-	}, 1200);
-	
-	$('.header-scrolldown').delay(3000).animate({
+	$('.header-scrolldown').delay(1000).animate({
 		marginTop: yPos
 	}, 1200);
 });
