@@ -18,18 +18,18 @@ $(function() {
 });
 	
 $(function() {
-$(".zoom").css("opacity","0");
-$(".zoom").hover(function () {
-$(this).stop().animate({
-opacity: '0.8'
-}, "slow");
+	$(".zoom").css("opacity","0");
+	$(".zoom").hover(function () {
+		$(this).stop().animate({
+			opacity: '0.8'
+		}, "slow");
 },
  
 function () {
-$(this).stop().animate({
-opacity: '0'
-}, "slow");
-});
+	$(this).stop().animate({
+		opacity: '0'
+		}, "slow");
+	});
 });
 
 //==================== Isotope ========================//

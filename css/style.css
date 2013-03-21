@@ -178,15 +178,11 @@ ul.navigation  li a {
 }
 
 ul.navigation li a:hover {
-	opacity: .8;
+	opacity: .5;
 }
 
 ul.navigation .current a {
 	color: #B1B1B1;
-}
-
-.current {
-	border-bottom: 2px solid #000;
 }
 
 .select-menu {
@@ -198,7 +194,7 @@ ul.navigation .current a {
 
 /* --------- Slideout Menu --------- */ 
 #slideout-wrap { position: fixed; z-index: 100; top: 0; left: 0; margin-top:-65px; height:65px; width:100%; background: none!important; }
-#slideout-button {position: absolute;top: 64px; left:49%; z-index:10;}
+#slideout-button {position: absolute;top: 62px; left:49%; z-index:10;}
 #slideout-button a {width:45px;height:33px;display: block;text-indent: -9999px;background: url(../images/slide_btn.png) 0 0 ;}
 #slideout-button a.close { background-position: 0 -33px; }
 #slideout-container { position: relative;padding: 0;color:#f7f7f7;background: none!important; }
