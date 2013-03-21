@@ -389,12 +389,14 @@ Feature Wrap
 */
 
 .features-wrap{
+	margin: 0 auto;
 	overflow: hidden;
 	padding:40px 0;
+	width: 800px;
 }
 
 .features-content{
-	padding:0px 0 20px 0;
+	padding:0 25px 20px 0;
 	text-align:center;
 }
 
