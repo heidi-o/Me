@@ -2,16 +2,16 @@
 
 	// Configuration Settings
 	// You can add multiple instances of to, cc, and bcc
-	$simpleFormMailRecipient = "your-email-here@email.com";
-	$simpleFormMailFrom = "from@example.com";
-	$simpleFormMailSubject = "Contact Form - Bismuth HTML";
+	$simpleFormMailRecipient = "heidi@heidi-o.de";
+	$simpleFormMailFrom = $_POST['Email_Address'];
+	$simpleFormMailSubject = "Contact Form - heidi-o.de";
 	$simpleFormSuccessMessage = "Thanks! Your message sent successfully.";
 	
 	// Basic header information
 	$header = "From: <$simpleFormMailFrom>\n";
 	$header .= "Return-path: <$simpleFormMailFrom>\n";
 	$header .= "X-Sender-IP: " .$_SERVER['REMOTE_ADDR']."\n";
-	$header .= "Content-Type: text/html; \n charset=iso-8859-1 \n";
+	$header .= "Content-Type: text/html; \n charset=utf-8 \n";
 	
 	// Construct the basic HTML for the message
 	$head = "<html><body>";
